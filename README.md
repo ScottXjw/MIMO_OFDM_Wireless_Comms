@@ -1,7 +1,8 @@
 # MIMO_OFDM_Wireless_Comms
 
 MIMO_OFDM_Wireless_Comms
-This Library is for modulating, analyzing and simulating wireless communication systems. It is for the wireless communication systems course. It is coded in MATLAB. Includes:
+This is for modulating, analyzing and simulating MIMO-OFDM wireless communication systems coded in MATLAB. 
+Includes:
 
 •	MIMO_channel_coefficient: generates a correlated MIMO fading channel
 
