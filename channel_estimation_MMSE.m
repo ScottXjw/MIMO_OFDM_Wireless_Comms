@@ -15,7 +15,7 @@ function H_MMSE = channel_estimation_MMSE(Y,Xp,pilot_loc,Nfft,Nps,h,SNR)
 
 %H = fft(h,N);
 snr = 10^(SNR*0.1);
-Np=Nfft/Nps; % 导频数量
+Np=Nfft/Nps; 
 k=1:Np; 
 H_tilde = Y(1,pilot_loc(k))./Xp(k);  % LS estimate
 k=0:length(h)-1; %k_ts = k*ts; 
