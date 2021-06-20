@@ -1,6 +1,5 @@
 # MIMO_OFDM_Wireless_Comms
 
-MIMO_OFDM_Wireless_Comms
 This is for modulating, analyzing and simulating MIMO-OFDM wireless communication systems coded in MATLAB. 
 Includes:
 
