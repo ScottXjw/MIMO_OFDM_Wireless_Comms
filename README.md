@@ -7,9 +7,9 @@ This Library is for modulating, analyzing and simulating wireless communication 
 
 •	OFDM: simulates the effect of ISI (ZP: zirro padding, CP: cyclic prefix) on channel BER performance of OFDM system with N=64 FFT and 16 carriers for 16-QAM in AWGN channel and multipath Rayleigh fading.
 
-•	channel estimation_MMSE: uses MMSE (Minimum mean square error) estimation method for channel estimation (h is the channel impulse response input)
+•	channel_estimation_MMSE: uses MMSE (Minimum mean square error) estimation method for channel estimation (h is the channel impulse response input)
 
-•	channel estimation_DFT: use DFT technique shown in the figure for channel estimation. (interp1 is the built in MATLAB function for linear or cubic spline interpolation depending on the input indicating "linear" or "spline" (the method, 4th input argument)
+•	channel_estimation_DFT: use DFT technique shown in the figure for channel estimation. (interp1 is the built in MATLAB function for linear or cubic spline interpolation depending on the input indicating "linear" or "spline" (the method, 4th input argument)
 
 
 ![Screen Shot 2021-06-19 at 10 42 11 PM](https://user-images.githubusercontent.com/46723995/122661201-a4aa9480-d155-11eb-94a6-15651eb9ed31.png)
