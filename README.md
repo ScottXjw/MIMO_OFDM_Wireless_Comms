@@ -14,3 +14,6 @@ This Library is for modulating, analyzing and simulating wireless communication 
 
 ![Screen Shot 2021-06-19 at 10 42 11 PM](https://user-images.githubusercontent.com/46723995/122661201-a4aa9480-d155-11eb-94a6-15651eb9ed31.png)
 
+(Figure, MIMO-OFDM Wireless Communications with MATLAB¢Á   Yong Soo Cho, Jaekwon Kim, Won Young Yang and Chung G. Kang
+2010 John Wiley & Sons (Asia) Pte Ltd )
+
