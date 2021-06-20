@@ -12,7 +12,7 @@ SNRs = [30];  sq2=sqrt(2);
 for i=1:length(SNRs)
    SNR = SNRs(i); 
    rand('seed',1); randn('seed',1);
-   MSE = zeros(1,6); nose = 0; % 变量nose用于统计错误符号数，Number_of_symbol_errors
+   MSE = zeros(1,6); nose = 0; % Number_of_symbol_errors
    for nsym=1:Nsym
       Xp = 2*(randn(1,Np)>0)-1;    % Pilot sequence generation
       %Data = ((2*(randn(1,Nd)>0)-1) + j*(2*(randn(1,Nd)>0)-1))/sq2; % QPSK modulation
