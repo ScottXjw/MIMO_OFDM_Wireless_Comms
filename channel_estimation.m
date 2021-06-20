@@ -12,7 +12,7 @@ SNRs = [30];  sq2=sqrt(2);
 for i=1:length(SNRs)
    SNR = SNRs(i); 
    rand('seed',1); randn('seed',1);
-   MSE = zeros(1,6); nose = 0; % 变量nose用于统计错误符号数，Number_of_symbol_errors
+   MSE = zeros(1,6); nose = 0; % 鍙橀噺nose鐢ㄤ簬缁熻閿欒绗﹀彿鏁帮紝Number_of_symbol_errors
    for nsym=1:Nsym
       Xp = 2*(randn(1,Np)>0)-1;    % Pilot sequence generation
       %Data = ((2*(randn(1,Nd)>0)-1) + j*(2*(randn(1,Nd)>0)-1))/sq2; % QPSK modulation
@@ -20,7 +20,7 @@ for i=1:length(SNRs)
       Data = modulate(mod_object,msgint)*A;
       %Data = modulate(mod_object, msgint); Data = modnorm(Data,'avpow',1)*Data;   % normalization
       ip = 0;    pilot_loc = [];
-      for k=1:Nfft % 在频域的特定位置加入导频和数据
+      for k=1:Nfft %
          if mod(k,Nps)==1
            X(k) = Xp(floor(k/Nps)+1); pilot_loc = [pilot_loc k]; ip = ip+1;
           else        X(k) = Data(k-ip);
@@ -28,7 +28,7 @@ for i=1:length(SNRs)
       end
       x = ifft(X,Nfft);                            % IFFT
       xt = [x(Nfft-Ng+1:Nfft) x];                  % Add CP
-      h = [(randn+j*randn) (randn+j*randn)/2];     % generates a (2-tap) channel|产生一个2抽头信道
+      h = [(randn+j*randn) (randn+j*randn)/2];     % generates a (2-tap) channel
       H = fft(h,Nfft); channel_length = length(h); % True channel and its time-domain length
       H_power_dB = 10*log10(abs(H.*conj(H)));      % True channel power in dB
       y_channel = conv(xt, h);                     % Channel path (convolution)
