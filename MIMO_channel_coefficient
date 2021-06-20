@@ -1,4 +1,4 @@
-function hh=channel_coeff(NT,NR,N,Rtx,Rrx,type)
+function hh=MIMO_channel_coefficient(NT,NR,N,Rtx,Rrx,type)
 %   correlated Rayleigh MIMO channel coefficient
 %   Inputs:
 %       NT    : number of transmitters
